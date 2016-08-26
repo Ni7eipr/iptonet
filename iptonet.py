@@ -4,15 +4,14 @@
 from IPy import IP
 import sys
 
+if len(sys.argv) != 3:
+    print u"usage:\n\tpython iptonet.py 最小IP 最大IP"
+    sys.exit()
 # 最小IP
-ipf = """
-61.213.189.201
-""".strip()
+ipf = sys.argv[1].strip()
 
 # 最大IP
-ipl = """
-61.213.189.243
-""".strip()
+ipl = sys.argv[2].strip()
 
 preip = ".".join(ipf.split(".")[:-1])
 # for x in IP("127.0.0.0/25"):
