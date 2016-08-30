@@ -1,6 +1,8 @@
 # !/usr/bin/env python
 # coding: utf-8
 
+# author:End1ng
+
 from IPy import IP
 import sys
 
